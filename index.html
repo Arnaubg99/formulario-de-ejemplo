@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <h1 id="title">Ejemplo Formulario</h1>
+          <p id="description">Esto es un formulario de ejemplo</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+              <label id="name-label" for="name">Nombre</label>
+              <input id="name" type="text" placeholder="Escribe tu nombre" required/>
+          </div>
+          <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input id="email" type="email"  placeholder="Escribe tu email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required/>
+          </div>
+          <div class="form-group">
+              <label id="number-label" for="number">Edad (opcional)</label>
+              <input id="number" placeholder="Escribe tu edad" type="number" min="0" max="100"/>
+          </div>
+          <div class="form-group">
+              <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+                  <select id="dropdown">
+                      <option value="" selected disabled>Select Current Role</option>
+                      <option value="1">option1</option>
+                      <option value="2">option2</option>
+                  </select>
+          </div>
+          <div class="form-group">
+              <p>Selecciona uno</p>
+                <label id="radio1-label" for="radio1"><input type="radio" id ="radio1" value="Definitely" name="radio"/>Definitely</label>
+                <label id="radio2-label" for="radio2"><input type="radio" id="radio2" value="Maybe" name="radio"/>Maybe</label>
+                <label id="radio3-label" for="radio3"><input type="radio" id="radio3" value="NotSure" name="radio"/>Not Sure</label>
+          </div>
+          <div class="form-group">
+              <p>Selecciona varios</p>
+                <label id="checkbox1-label" for="checkbox1" ><input type="checkbox" id="checkbox1" value="1"/>Option 1</label>
+                <label id="checkbox2-label" for="checkbox2" ><input type="checkbox" id="checkbox2" value="2"/>Option 2</label>
+                <label id="checkbox3-label" for="checkbox3" ><input type="checkbox" id="checkbox3" value="3"/>Option 3</label>
+                <label id="checkbox4-label" for="checkbox4" ><input type="checkbox" id="checkbox4" value="4"/>Option 4</label>
+                <label id="checkbox5-label" for="checkbox5" ><input type="checkbox" id="checkbox5" value="5"/>Option 5</label>
+          </div>
+          <div class="form-group">
+              <label for="textarea" id="textarea-label">¿Algun comentario/sugerencia?</label>
+              <textarea id="textarea" rows="3" cols="30" placeholder="Escribir aquí..."></textarea>
+          </div>
+          <input type="submit" id="submit"/>
+        </form>
+      </div>
+  </body>
+</html>
